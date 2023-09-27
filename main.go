@@ -53,6 +53,10 @@ func (n *CinemaNetwork) NotifyAll(movie []Movie) {
 	}
 }
 
+type Cinemas interface {
+	Update(movie []Movie)
+}
+
 type Cinema struct {
 	Name    string
 	Movies  []Movie
